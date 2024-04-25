@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>Special Day</title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+	</head>
+
+	<body style="margin:0px">
+		<audio autoplay loop>
+			<source src="music/music.mp3" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img id="img" src="">
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">Click!</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">We have been together forrr</h2>
+			<div id="timer">
+				<b id="d"></b> Days 
+				<b id="h"></b> Hours
+				<b id="m"></b> Minutes
+				<b id="s"></b> Seconds
+			</div>
+		</div>
+
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span>
+    	</div>		
+
+		<script >
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			var imageArray = ["pic/jpgimg/pic1.jpg", "pic/jpgimg/pic2.jpg", "pic/jpgimg/pic3.jpg", "pic/jpgimg/pic4.jpg", "pic/jpgimg/pic5.jpg", "pic/jpgimg/pic6.jpg", 
+			"pic/jpgimg/pic7.jpg", "pic/jpgimg/pic8.jpg", "pic/jpgimg/pic9.jpg", "pic/jpgimg/pic10.jpg", "pic/jpgimg/pic11.jpg", "pic/jpgimg/pic12.jpg", "pic/jpgimg/pic13.jpg",
+			"pic/jpgimg/pic14.jpg", "pic/jpgimg/pic15.jpg", "pic/jpgimg/pic16.jpg", "pic/jpgimg/pic17.jpg"];
+			var imageIndex = 0;
+			var txtArray = ["Hello Hottie", "When we First Met, the girl had a serious look in her eyes", "I was also understanding my feelings♡",
+			 "The first time I went to meet a girl", "a little fairy appeared", "Drawn by her intellect and humor, our connection deepened with shared laughter.", "Bravely, I voiced my desire to delve deeper into the bond blossoming between us.",
+			 "I knew that with her by my side, I had already found my happily ever after.", "In her presence, time became a mere illusion, lost in the infinity of our shared moments.", "In her eyes, I found my reflection—a mirror of love, acceptance, and infinite possibility.", "From strangers to soulmates, our journey was written in the stars, destined to intertwine in the tapestry of fate.",
+			 "Love flourished, adorning each day with precious memories and aspirations for the future.", "Hand in hand, we confronted life's challenges, celebrating victories and navigating obstacles as one.", "As the years unfolded, our love deepened, evolving with the changing seasons of our lives.", "Surrounded by love and joy, I pledged my heart, embarking on a new chapter with boundless optimism.", "Tears of joy flowed as I vowed eternal devotion, sealing our union with promises of forever.", "In her, I found my soulmate, my forever, gracing my life with infinite beauty. I love you Babe"];
+			 var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>
